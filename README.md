@@ -1,50 +1,63 @@
-# Welcome to your Expo app 👋
+# MaxOutProgressionApp
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MaxOutProgressionApp is a React Native application built with Expo, designed to help users track and improve their workout progression.
 
-## Get started
+## Getting Started
 
-1. Install dependencies
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-   ```bash
+### Prerequisites
+
+- Node.js (v14 or later)
+- npm (v6 or later)
+- Expo CLI
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/MaxOutProgressionApp.git
+   cd MaxOutProgressionApp
+   ```
+
+2. Install dependencies:
+   ```
    npm install
    ```
 
-2. Start the app
-
-   ```bash
-    npx expo start
+3. Start the development server:
+   ```
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+## Running the App
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- To run on iOS simulator: Press `i` in the terminal after starting the development server
+- To run on Android emulator: Press `a` in the terminal after starting the development server
+- To run on web: Press `w` in the terminal after starting the development server
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Building the App
 
-## Get a fresh project
+To create a production build:
 
-When you're ready, run:
+1. For Android:
+   ```
+   eas build --platform android
+   ```
 
-```bash
-npm run reset-project
+2. For iOS:
+   ```
+   eas build --platform ios
+   ```
+
+3. For web:
+   ```
+   npx expo export
+   ```
+
+## Testing
+
+Run the test suite with:
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npm test
+```
